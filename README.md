@@ -96,3 +96,100 @@ $ json-server --watch .\api\db.json -p 8000
 This should be the result on your terminal:
 ![image](https://github.com/omarakamal/lab-api-axios/assets/54825038/3e24d4fd-8c53-4c29-a848-c1d46e6937eb)
 
+NOTE: Now your api is running on port 8000. test your routes using postman
+
+### Iteration 2: The `index.routes.js` file
+
+We have our API running, So now will create the routes in our application to handle the CRUD api calls for creating, reading, updating, and deleting resources from our api.
+
+The routes that we will create create will each make a call to the following endpoints in our custom api:
+
+- "/all":  Get all the characters info from _[http://localhost:8000/characters](http://localhost:8000/characters)_
+- "/search": Get a single character info from _[http://localhost:8000/characters/:id](http://localhost:8000/characters/:id)_
+-  "/search/new-character": Create a single character posting the data to _[http://localhost:8000/characters](http://localhost:8000/characters)_
+-  "/search/delete": Delete a single character through his id in _[http://localhost:8000/characters/:id](http://localhost:8000/characters/:id)_
+- "/search/edit": Edit a single character through his id in _[http://localhost:8000/characters/:id](http://ih-crud-api.herokuapp.com/characters/:id)_
+
+You have to create an Axios call for each of these actions. The "/all" and "/search" routes should send the information of the 1 character to the index.hbs page
+<!-- :::success -->
+
+**Micro-advice**
+
+To make sure everything is working, use [POSTMAN](https://www.getpostman.com/).
+
+<!-- ::: -->
+
+In this iteration, it's enough to show results in the console.
+
+### Iteration 3: Create the routes in the index.routes.js
+
+
+#### Fetch all characters
+
+![image](https://user-images.githubusercontent.com/23629340/36733634-7b6b6dca-1bd1-11e8-9803-5282681159ba.png)
+
+Retrieve all the available characters in the API and show them in the application. In order to do that, we need to:
+
+- When the user clicks on the "Fetch All" button then a GET request should be sent to the '/all' route.
+- this route should render the index.hbs page and pass the object containing all the characters to the hbs page.
+- Finally, using the hbs helpers iterate through the array of all the characters and display them at the bottom of the hbs page.
+- ![image](https://github.com/omarakamal/lab-api-axios/assets/54825038/7aeb6ea9-6a65-4055-bd5a-60a606ec6562)
+
+
+#### Fetch one character
+
+![image](https://user-images.githubusercontent.com/23629340/36733678-97ecd42a-1bd1-11e8-8e60-6aab38d632a0.png)
+
+Following the same idea as with fetching all, to retrieve a single character's data we need to:
+
+- make an axios call in the '/search' route that will send an axios call to retrieve one character based on the user input in the input field.
+- Search that character in the API with _[http://localhost:8000/characters/:id](http://ih-crud-api.herokuapp.com/characters/:id)_
+- Get the data and render the index.js file with the one character data.
+- ![image](https://github.com/omarakamal/lab-api-axios/assets/54825038/6c7a1714-c70c-4c95-8add-ab72b09b6635)
+
+
+#### Delete one character
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_3d893f20f95e5b13369375cdfd7900a5.png)
+
+To be able to delete a character from the API database, we need to:
+
+- make an axios call in the '/search/delete' route based on the id the user inputs in the input field.
+- Delete that character in the API with _[http://localhost:8000/characters/:id](http://ih-crud-api.herokuapp.com/characters/:id)_
+   <!-- :::danger -->
+  **Remember which HTTP verb you need in the request!!**
+   <!-- ::: -->
+- if the user is deleted then redirect the user back to the '/' route
+
+#### Create new character
+
+![image](https://user-images.githubusercontent.com/23629340/36733698-a7c64f8e-1bd1-11e8-9b7d-b37c7a800a27.png)
+
+We will create a form with 4 inputs: name(text), occupation(text), weapon(text) and cartoon(checkbox).
+
+- Once the user clicks on the submit button, a POST request should be sent to the '/search/new-character'
+- In the route make an axios call to create the character based on the inputs of the user
+- once the character has been created redirect the user back to the '/' route
+   <!-- :::danger -->
+  **Remember which HTTP verb you need in the request!!**
+   <!-- ::: -->
+  
+#### Edit a character
+
+![image](https://user-images.githubusercontent.com/23629340/36733714-b6257b36-1bd1-11e8-8518-c3f7e2ba034c.png)
+
+We will create a form with 4 inputs: name(text), occupation(text), weapon(text) and cartoon(checkbox). Also, we will create a new input to indicate the `id` of the character we want to edit.
+
+- Once the submit button is clicked a POST request should be sent to the '/search/edit' route that will edit the character based on the id passed and the new information for the fields.
+   <!-- :::danger -->
+  **Remember which HTTP verb you need in the request!!**
+   <!-- ::: -->
+- If the character was successfully updated, redirect the user back to the '/'.
+
+That would be all!
+
+Happy coding! :heart:
+
+### BONUS: Iteration 4: Add feedback for successful and failed api calls
+
+- add feedback to the user if the creating, retrieving, updating, or deleting a character has failed or succeeded
