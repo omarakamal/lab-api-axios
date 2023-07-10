@@ -121,10 +121,8 @@ To make sure everything is working, use [POSTMAN](https://www.getpostman.com/).
 
 In this iteration, it's enough to show results in the console.
 
-### Iteration 3: Create the routes in the index.routes.js
 
-
-#### 3.1: Fetch all characters
+#### Iteration 3: Fetch all characters
 
 ![image](https://user-images.githubusercontent.com/23629340/36733634-7b6b6dca-1bd1-11e8-9803-5282681159ba.png)
 
@@ -136,7 +134,7 @@ Retrieve all the available characters in the API and show them in the applicatio
 - ![image](https://github.com/omarakamal/lab-api-axios/assets/54825038/7aeb6ea9-6a65-4055-bd5a-60a606ec6562)
 
 
-#### 3.2: Fetch one character
+#### Iteration 4: Fetch one character
 
 ![image](https://user-images.githubusercontent.com/23629340/36733678-97ecd42a-1bd1-11e8-8e60-6aab38d632a0.png)
 
@@ -148,7 +146,7 @@ Following the same idea as with fetching all, to retrieve a single character's d
 - ![image](https://github.com/omarakamal/lab-api-axios/assets/54825038/6c7a1714-c70c-4c95-8add-ab72b09b6635)
 
 
-#### 3.3: Delete one character
+#### Iteration 5: Delete one character
 
 ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_3d893f20f95e5b13369375cdfd7900a5.png)
 
@@ -161,7 +159,7 @@ To be able to delete a character from the API database, we need to:
    <!-- ::: -->
 - if the user is deleted then redirect the user back to the '/' route
 
-#### 3.4: Create new character
+#### Iteration 6: Create new character
 
 ![image](https://user-images.githubusercontent.com/23629340/36733698-a7c64f8e-1bd1-11e8-9b7d-b37c7a800a27.png)
 
@@ -174,7 +172,7 @@ We will create a form with 4 inputs: name(text), occupation(text), weapon(text) 
   **Remember which HTTP verb you need in the request!!**
    <!-- ::: -->
   
-#### 3.5: Edit a character
+#### Iteration 7: Edit a character
 
 ![image](https://user-images.githubusercontent.com/23629340/36733714-b6257b36-1bd1-11e8-8518-c3f7e2ba034c.png)
 
@@ -190,6 +188,6 @@ That would be all!
 
 Happy coding! :heart:
 
-### BONUS: Iteration 4: Add feedback for successful and failed api calls
+### BONUS: Iteration 8: Add feedback for successful and failed api calls
 
 - add feedback to the user if the creating, retrieving, updating, or deleting a character has failed or succeeded
