@@ -125,8 +125,8 @@ In this iteration, it's enough to show results in the console.
 
 ### Iteration 3: Fetch all characters
 
-![image](![image](https://github.com/omarakamal/lab-api-axios/assets/54825038/48b27200-d02b-4b20-b20c-e04d24936716)
-)
+![image](https://github.com/omarakamal/lab-api-axios/assets/54825038/606ca62f-aacf-4a33-b83f-1003a73411dd)
+
 
 Retrieve all the available characters in the API and show them in the application. In order to do that, we need to:
 
