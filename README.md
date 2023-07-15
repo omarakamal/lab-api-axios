@@ -1,4 +1,5 @@
-![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
+![logo_ironhack_blue 7](![image](https://github.com/omarakamal/lab-api-axios/assets/54825038/28d5f227-f19d-4d9f-bc91-4bc4bb48098a)
+)
 
 # LAB | Axios CRUD exercise
 
@@ -124,7 +125,8 @@ In this iteration, it's enough to show results in the console.
 
 ### Iteration 3: Fetch all characters
 
-![image](https://user-images.githubusercontent.com/23629340/36733634-7b6b6dca-1bd1-11e8-9803-5282681159ba.png)
+![image](![image](https://github.com/omarakamal/lab-api-axios/assets/54825038/48b27200-d02b-4b20-b20c-e04d24936716)
+)
 
 Retrieve all the available characters in the API and show them in the application. In order to do that, we need to:
 
@@ -136,7 +138,8 @@ Retrieve all the available characters in the API and show them in the applicatio
 
 ### Iteration 4: Fetch one character
 
-![image](https://user-images.githubusercontent.com/23629340/36733678-97ecd42a-1bd1-11e8-8e60-6aab38d632a0.png)
+![image](![image](https://github.com/omarakamal/lab-api-axios/assets/54825038/3918ea01-e43f-4b10-9b27-cdd2cd345566)
+)
 
 Following the same idea as with fetching all, to retrieve a single character's data we need to:
 
