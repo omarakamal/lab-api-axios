@@ -138,7 +138,7 @@ Retrieve all the available characters in the API and show them in the applicatio
 
 ### Iteration 4: Fetch one character
 
-![image](https://github.com/omarakamal/lab-api-axios/assets/54825038/e92468ed-99a7-42c1-ae58-88fe7aea4c80)
+![image](https://github.com/omarakamal/lab-api-axios/assets/54825038/f121e63a-1063-4e97-9436-c4d970dc5bdb)
 
 
 Following the same idea as with fetching all, to retrieve a single character's data we need to:
