@@ -1,4 +1,4 @@
-![logo_ironhack_blue 7](![image](https://github.com/omarakamal/lab-api-axios/assets/54825038/28d5f227-f19d-4d9f-bc91-4bc4bb48098a)
+![logo_ironhack_blue 7](![image](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 )
 
 # LAB | Axios CRUD exercise
