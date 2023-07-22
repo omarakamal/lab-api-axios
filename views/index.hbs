@@ -2,7 +2,9 @@
 	<h1>Ironhack Characters API</h1>
 
 	{{#if errorMessage}}
-		{{errorMessage}}
+		<span class="error"> 
+			{{errorMessage}}
+		</span>
 	{{/if}}
 
 	<div class='characters-container'>
@@ -17,7 +19,7 @@
 
 	<section class='operations'>
 		<div class='operation'>
-			<button id='fetch-all'>Fetch all</button>
+			<a href='/all' id='fetch-all' class="a-btn">Fetch all</a>
 		</div>
 
 		<div class='operation'>
