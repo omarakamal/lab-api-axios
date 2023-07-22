@@ -9,25 +9,25 @@ router.get('/', (req, res, next) => {
 
 //ITERATION 1
 //GET route for searching for 1 character
-router.get('/search', (req, res) => {
+router.get('/search', (req, res, next) => {
 	//Write code here
 })
 
 //ITERATION 2
 //POST route for deleting 1 character
-router.post('/search/delete', (req, res) => {
+router.post('/search/delete', (req, res, next) => {
   //Write code here
 })
 
 //ITERATION 3
 //POST route for creating a new character
-router.post('/search/new-character', (req, res) => {
+router.post('/search/new-character', (req, res, next) => {
   //Write code here
 })
 
 //ITERATION 4
 //POST route for editing 1 character
-router.post('/search/edit', (req, res) => {
+router.post('/search/edit', (req, res, next) => {
   //Write code here
 })
 
