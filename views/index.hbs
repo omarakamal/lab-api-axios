@@ -1,5 +1,6 @@
 <section class='container'>
 	<h1>Ironhack Characters API</h1>
+
 	<div class='characters-container'>
 		<div class='character-info'>
 			{{! Display the information for 1 character below }}
@@ -9,26 +10,31 @@
 			<div class='weapon'>Character Weapon</div>
 		</div>
 	</div>
+
 	<section class='operations'>
 		<div class='operation'>
 			<button id='fetch-all'>Fetch all</button>
 		</div>
+
 		<div class='operation'>
 			<form action='/search'>
-				<label for='character-id'>Search by ID: </label>
-				<input type='text' name='id' />
+				<label for='character-id'>Search by ID:
+					<input type='text' name='id' />
+				</label>
 				<button id='fetch-one'>Fetch one</button>
 			</form>
 		</div>
+
 		<div class='operation delete'>
 			<form action='/search/delete' method='POST'>
-				<label for='id'>Delete by ID: </label>
-				<input type='text' name='id' />
+				<label for='id'>Delete by ID:
+					<input type='text' name='id' />
+				</label>
 				<button id='delete-one'>Delete one</button>
 			</form>
 		</div>
-
 	</section>
+
 </section>
 <section class='container'>
 	<section class='form-container'>
@@ -40,46 +46,60 @@
 			method='POST'
 		>
 			<div class='field'>
-				<label for='name'>Name: </label>
-				<input type='text' name='name' />
+				<label for='name'>Name:
+					<input type='text' name='name' />
+				</label>
 			</div>
+
 			<div class='field'>
-				<label for='occupation'>Occupation: </label>
-				<input type='text' name='occupation' />
+				<label for='occupation'>Occupation:
+					<input type='text' name='occupation' />
+				</label>
 			</div>
+
 			<div class='field'>
-				<label for='weapon'>Weapon: </label>
-				<input type='text' name='weapon' />
+				<label for='weapon'>Weapon:
+					<input type='text' name='weapon' />
+				</label>
 			</div>
+
 			<div class='field'>
-				<label for='cartoon'>Is a Cartoon: </label>
-				<input name='cartoon' type='checkbox' />
+				<label for='cartoon'>Is a Cartoon:
+					<input name='cartoon' type='checkbox' />
+				</label>
 			</div>
+
 			<button id='send-data'>Create</button>
 		</form>
 	</section>
+
 	<section class='form-container'>
 		<h2>Edit Character</h2>
 		<form id='edit-character-form' class='character-form' method='POST' action='/search/edit'>
 			<div class='field'>
-				<label for='id'>ID: </label>
-				<input type='text' name='id' />
+				<label for='id'>ID:
+					<input type='text' name='id' />
+				</label>
 			</div>
 			<div class='field'>
-				<label for='name'>Name: </label>
-				<input type='text' name='name' />
+				<label for='name'>Name:
+					<input type='text' name='name' />
+				</label>
 			</div>
 			<div class='field'>
-				<label for='occupation'>Occupation: </label>
-				<input type='text' name='occupation' />
+				<label for='occupation'>Occupation:
+					<input type='text' name='occupation' />
+				</label>
 			</div>
 			<div class='field'>
-				<label for='weapon'>Weapon: </label>
-				<input type='text' name='weapon' />
+				<label for='weapon'>Weapon:
+					<input type='text' name='weapon' />
+				</label>
 			</div>
 			<div class='field'>
-				<label for='cartoon'>Is a Cartoon: </label>
-				<input name='cartoon' type='checkbox' />
+				<label for='cartoon'>Is a Cartoon:
+					<input name='cartoon' type='checkbox' />
+				</label>
 			</div>
 			<button id='send-data'>Update</button>
 		</form>
