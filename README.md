@@ -92,8 +92,9 @@ In the `api` folder, create a `db.json` file. Inside our `db.json` we will speci
 Then run the following code in the terminal to make our API start working:
 
 ```bash
-$ json-server --watch .\data\db.json -p 8000
+$ json-server --watch ./data/db.json -p 8000
 ```
+
 This should be the result on your terminal:
 ![image](https://github.com/omarakamal/lab-api-axios/assets/54825038/3e24d4fd-8c53-4c29-a848-c1d46e6937eb)
 
