@@ -7,6 +7,13 @@ router.get('/', (req, res, next) => {
 	res.render('index')
 })
 
+//ITERATION 3
+//GET route for searching for 1 character
+router.get('/all', (req, res, next) => {
+	//Write code here
+	
+})
+
 //ITERATION 4
 //GET route for searching for 1 character
 router.get('/search', (req, res, next) => {

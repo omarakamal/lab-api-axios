@@ -43,7 +43,7 @@ button {
 
 .characters-container {
   width: 80%;
-  margin: 0 auto;
+  margin: 1rem auto 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,4 +104,30 @@ button {
 
 .submit-button {
   margin: 10px 0 0 120px;
+}
+
+.error {
+  background-color: orangered;
+  padding: .5rem 1.25rem;
+  font-size: 1.5rem;
+  border-radius: 50px;
+}
+
+.a-btn {
+  font-family: inherit;
+  font-size: 11px;
+  background: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 3px 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  color: #fff;
+  overflow: hidden;
+  text-decoration: none;
 }
