@@ -116,5 +116,17 @@
 			<button id='send-data'>Update</button>
 		</form>
 	</section>
-	{{! Show all the characters here if the "fetch all" button is pressedA }}
+
+
+{{!-- </section class="characters-container"> --}}
+			{{#each characters}}
+	<div class='characters-container'>
+		<div class='character-info'>
+			<div class='name'>Character Name: {{name}}</div>
+			<div class='occupation'>Character Occupation: {{occupation}}</div>
+			<div class='cartoon'>Is a Cartoon?: {{cartoon}}</div>
+			<div class='weapon'>Character Weapon: {{weapon}}</div>
+		</div>
+	</div>
+	{{/each}}
 </section>

@@ -10,8 +10,14 @@ router.get('/', (req, res, next) => {
 //ITERATION 3
 //GET route for searching for 1 character
 router.get('/all', (req, res, next) => {
-	//Write code here
-	
+	axios.get("http://localhost:8000/characters")
+	.then(result => {
+		const characters = result.data
+		res.render("index", {characters})
+	})
+	.catch(err => {
+		console.log(err)
+	})
 })
 
 //ITERATION 4
