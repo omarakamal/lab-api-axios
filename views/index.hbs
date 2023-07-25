@@ -116,5 +116,7 @@
 			<button id='send-data'>Update</button>
 		</form>
 	</section>
-	{{! Show all the characters here if the "fetch all" button is pressedA }}
+	{{#each characters}}
+		<p>{{name}}</p>
+	{{/each}}
 </section>

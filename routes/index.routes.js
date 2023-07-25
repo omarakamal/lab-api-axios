@@ -7,17 +7,22 @@ router.get('/', (req, res, next) => {
 	res.render('index')
 })
 
-//ITERATION 3
+//ITERATION 2
 //GET route for searching for 1 character
 router.get('/all', (req, res, next) => {
-	//Write code here
-	
+	axios.get('http://localhost:8000/characters')
+	.then((characters) => {
+		res.render('index',{characters:characters.data})
+	})	
 })
 
-//ITERATION 4
 //GET route for searching for 1 character
 router.get('/search', (req, res, next) => {
-	//Write code here
+	console.log(req.params)
+	axios.get(`http://localhost:8000/characters/:id`)
+	.then((character) => {
+		res.render('index',{character:character.data})
+	})
 })
 
 //ITERATION 5
