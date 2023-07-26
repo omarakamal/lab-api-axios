@@ -10,10 +10,10 @@
 	<div class='characters-container'>
 		<div class='character-info'>
 			{{! Display the information for 1 character below }}
-			<div class='name'>Character Name</div>
-			<div class='occupation'>Character Occupation</div>
-			<div class='cartoon'>Is a Cartoon?</div>
-			<div class='weapon'>Character Weapon</div>
+			<div class='name'>Character Name:{{name}}</div>
+			<div class='occupation'>Character Occupation:{{occupation}}</div>
+			<div class='cartoon'>Is a Cartoon?:{{cartoon}}</div>
+			<div class='weapon'>Character Weapon:{{weapon}}</div>
 		</div>
 	</div>
 
@@ -116,5 +116,14 @@
 			<button id='send-data'>Update</button>
 		</form>
 	</section>
-	{{! Show all the characters here if the "fetch all" button is pressedA }}
+	{{#if characters}}
+		{{#each characters}}
+			<div class="character-info">
+				<p>{{name}}</p>
+				<p>{{occupation}}</p>
+				<p>{{weapon}}</p>
+				<p>{{cartoon}}</p>
+			</div>
+		{{/each}}
+	{{/if}}
 </section>
