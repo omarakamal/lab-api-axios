@@ -7,10 +7,23 @@
       "weapon": ""
     },
     {
-      "name": "Han Solo",
-      "occupation": "Cook",
-      "weapon": "nothing",
-      "id": 4
+      "name": "Ironhacker",
+      "occupation": "developer",
+      "weapon": "keyboard",
+      "id": 5
+    },
+    {
+      "name": "minion",
+      "occupation": "hero",
+      "cartoon": "on",
+      "weapon": "hammer",
+      "id": 6
+    },
+    {
+      "name": "Char1",
+      "occupation": "cook",
+      "weapon": "spoon",
+      "id": 7
     }
   ]
 }

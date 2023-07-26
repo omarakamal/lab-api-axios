@@ -7,10 +7,11 @@
 body {
   font-family: 'Roboto';
   color: white;
-  background: url("/images/minions.jpg")
+  background: url('/images/minions.jpg');
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #d8b362;
 }
 
@@ -108,9 +109,18 @@ button {
 
 .error {
   background-color: orangered;
-  padding: .5rem 1.25rem;
+  padding: 0.5rem 1.25rem;
   font-size: 1.5rem;
   border-radius: 50px;
+}
+
+.success {
+  color: #f50b93;
+  /* padding: 0.5rem 1.25rem; */
+  font-size: 2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  padding: 8px 15px;
 }
 
 .a-btn {
