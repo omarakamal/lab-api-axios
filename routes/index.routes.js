@@ -33,12 +33,11 @@ router.get('/search', async (req, res, next) => {
 		.render('index', {errorMessage: "No Id provided for character search"})
 		return
 	}
-	console.log('character id ', id);
 
 	try{
 		const result = await apiService.getOneCharacter(id);
 		const character = result.data
-		console.log('character ', character);
+
 		res.render('index', character)
 		return;
 	}catch(error){
@@ -74,8 +73,6 @@ router.post('/search/new-character', async (req, res, next) => {
 
 	// resetting the cartoon to boolean 
 	data['cartoon'] =  cartoon === 'on' ? true : false;
-	console.log('data ', data);
-
 	try{
 		const newCharacter = await apiService.createCharacter(data)
 		res.redirect('/')
