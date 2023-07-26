@@ -15,16 +15,28 @@
       "cartoon": false
     },
     {
-      "name": "Patrick Star",
-      "occupation": "unemployed",
-      "weapon": "rock",
-      "id": 3
+
+      "id": 3,
+      "name": "Sponge Bob",
+      "occupation": "Lives under the sea",
+      "weapon": "Crabby Patty",
+      "cartoon": true
     },
     {
-      "name": "Bob Sponge",
-      "occupation": "Fry Cook",
-      "weapon": "Spatula",
-      "id": 4
+      "id": 4,
+      "name": "doer",
+      "occupation": "foer",
+      "weapon": "dfddf"
+    },
+    {
+      "name": "Bright Amoako",
+      "occupation": "ghghg",
+      "weapon": "ghhghg",
+      "cartoon": "on",
+      "id": 5
     }
+   
+  
+    
   ]
 }
