@@ -15,6 +15,7 @@
       "cartoon": false
     },
     {
+
       "id": 3,
       "name": "Sponge Bob",
       "occupation": "Lives under the sea",
@@ -33,12 +34,9 @@
       "weapon": "ghhghg",
       "cartoon": "on",
       "id": 5
-    },
-    {
-      "name": "uic-gin-bd-pg",
-      "occupation": "ghghg",
-      "weapon": "ghhghg",
-      "id": 6
     }
+   
+  
+    
   ]
 }

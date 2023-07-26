@@ -8,6 +8,7 @@ router.get("/", (req, res, next) => {
 });
 
 //ITERATION 3
+
 //GET route for searching all
 router.get("/all", async (req, res, next) => {
   try {
@@ -18,6 +19,9 @@ router.get("/all", async (req, res, next) => {
     next(error);
   }
 });
+
+
+
 
 //ITERATION 4
 //GET route for searching 1 Character
