@@ -20,6 +20,25 @@
       "occupation": "Lives under the sea",
       "weapon": "Crabby Patty",
       "cartoon": true
+    },
+    {
+      "id": 4,
+      "name": "doer",
+      "occupation": "foer",
+      "weapon": "dfddf"
+    },
+    {
+      "name": "Bright Amoako",
+      "occupation": "ghghg",
+      "weapon": "ghhghg",
+      "cartoon": "on",
+      "id": 5
+    },
+    {
+      "name": "uic-gin-bd-pg",
+      "occupation": "ghghg",
+      "weapon": "ghhghg",
+      "id": 6
     }
   ]
 }

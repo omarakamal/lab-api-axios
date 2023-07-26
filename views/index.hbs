@@ -7,16 +7,17 @@
 		</span>
 	{{/if}}
 
-	<div class='characters-container'>
+
+	 <div class='characters-container'>
 		<div class='character-info'>
 			{{! Display the information for 1 character below }}
-			<div class='name'>Character Name</div>
-			<div class='occupation'>Character Occupation</div>
-			<div class='cartoon'>Is a Cartoon?</div>
-			<div class='weapon'>Character Weapon</div>
+			<div class='name'>Character Name {{character.name}}</div>
+			<div class='occupation'>Character Occupation {{character.occupation}}</div>
+			<div class='cartoon'>Is a Cartoon? {{character.cartoon}}</div>
+			<div class='weapon'>Character Weapon {{character.weapon}} </div>
 		</div>
 	</div>
-
+	
 	<section class='operations'>
 		<div class='operation'>
 			<a href='/all' id='fetch-all' class="a-btn">Fetch all</a>
@@ -116,5 +117,16 @@
 			<button id='send-data'>Update</button>
 		</form>
 	</section>
+<h2>All Characters</h2>
+<ul>
+	{{#each characters}}
+	<li>
+	{{this.name}}
+	{{this.occupation}}
+	{{this.weapon}}
+	{{this.cartoon}}
+	</li>
+	{{/each}}
+	</ul>
 	{{! Show all the characters here if the "fetch all" button is pressedA }}
 </section>
