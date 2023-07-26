@@ -92,7 +92,7 @@ In the `api` folder, create a `db.json` file. Inside our `db.json` we will speci
 Then run the following code in the terminal to make our API start working:
 
 ```bash
-$ json-server --watch ./data/db.json -p 8000
+$ npm run api
 ```
 
 This should be the result on your terminal:

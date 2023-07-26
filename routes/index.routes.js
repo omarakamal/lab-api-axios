@@ -10,8 +10,7 @@ router.get('/', (req, res, next) => {
 //ITERATION 3
 //GET route for searching for 1 character
 router.get('/all', (req, res, next) => {
-	//Write code here
-	
+	//Write code here	
 })
 
 //ITERATION 4
