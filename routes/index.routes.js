@@ -7,8 +7,8 @@ router.get('/', (req, res, next) => {
 	res.render('index')
 })
 
-//ITERATION 2
-//GET route for searching for 1 character
+//ITERATION 3
+//GET route for searching all characters
 router.get('/all', (req, res, next) => {
 	axios.get('http://localhost:8000/characters')
 	.then((characters) => {
@@ -17,6 +17,7 @@ router.get('/all', (req, res, next) => {
 	.catch(err => console.log(err))	
 })
 
+//ITERATION 4
 //GET route for searching for 1 character
 router.get('/search', (req, res, next) => {
 	axios.get(`http://localhost:8000/characters/${req.query.id}`)
@@ -41,22 +42,38 @@ router.post('/search/delete', (req, res, next) => {
 //POST route for creating a new character
 router.post('/search/new-character', (req, res, next) => {
 	const {name, occupation, weapon, cartoon} = req.body
-	axios.post(`http://localhost:8000/characters/`, {name, occupation, weapon, cartoon})
-	.then((character) => {
-		res.redirect('/')
-	})
-	.catch(err => console.log(err))
+	if (!name || typeof name !== 'string' ||
+  	!occupation || typeof occupation !== 'string' ||
+  	!weapon || typeof weapon !== 'string') {
+		return res.json({ error: 'Invalid or missing fields in the request body' });
+	}
+	else {
+		const character = {name, occupation, cartoon, weapon}
+		axios.post(`http://localhost:8000/characters/`, character)
+		.then((response) => {
+			res.redirect('/')
+		})
+		.catch(err => console.log(err))
+	}
 })
 
 //ITERATION 7
 //POST route for editing 1 character
 router.post('/search/edit', (req, res, next) => {
 	const {name, occupation, weapon, cartoon} = req.body
-	axios.put(`http://localhost:8000/characters/${req.body.id}`, {name, occupation, weapon, cartoon})
-	.then((character) => {
-		res.redirect('/')
-	})
-	.catch(err => console.log(err))
+	if (!name || typeof name !== 'string' ||
+  	!occupation || typeof occupation !== 'string' ||
+  	!weapon || typeof weapon !== 'string') {
+		return res.json({ error: 'Invalid or missing fields in the request body' });
+	}
+	else {
+		const character = {name, occupation, cartoon, weapon}
+		axios.put(`http://localhost:8000/characters/${req.body.id}`, character)
+		.then((response) => {
+			res.redirect('/')
+		})
+		.catch(err => console.log(err))
+	}
 })
 
 module.exports = router

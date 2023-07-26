@@ -20,6 +20,18 @@
       "occupation": "Lives under the sea",
       "weapon": "Crabby Patty",
       "cartoon": true
+    },
+    {
+      "name": "Omar",
+      "occupation": "Teacher",
+      "weapon": "Glasses",
+      "id": 4
+    },
+    {
+      "name": "Felipe",
+      "occupation": "Teacher junior",
+      "weapon": "Brazilian accent",
+      "id": 5
     }
   ]
 }
