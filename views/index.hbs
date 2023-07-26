@@ -116,7 +116,14 @@
 			<button id='send-data'>Update</button>
 		</form>
 	</section>
-	{{#each characters}}
-		<p>{{name}}</p>
-	{{/each}}
+	<section id="results">
+		{{#each characters}}
+		<h4>{{id}}. {{name}}</h4>
+		<ul>
+			<li>Occupation : {{occupation}}</li>
+			<li>Weapon : {{weapon}}</li>
+			<li>Cartoon : {{cartoon}}</li>
+		</ul>
+		{{/each}}
+	</section>
 </section>

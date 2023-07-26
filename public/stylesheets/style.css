@@ -131,3 +131,7 @@ button {
   overflow: hidden;
   text-decoration: none;
 }
+
+#results {
+  text-align: left;
+}
