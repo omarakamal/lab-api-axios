@@ -15,11 +15,16 @@
       "cartoon": false
     },
     {
-      "id": 3,
-      "name": "Sponge Bob",
-      "occupation": "Lives under the sea",
-      "weapon": "Crabby Patty",
-      "cartoon": true
+      "name": "Patrick Star",
+      "occupation": "unemployed",
+      "weapon": "rock",
+      "id": 3
+    },
+    {
+      "name": "Bob Sponge",
+      "occupation": "Fry Cook",
+      "weapon": "Spatula",
+      "id": 4
     }
   ]
 }
