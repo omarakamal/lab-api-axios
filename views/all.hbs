@@ -4,5 +4,10 @@
     <h2>Name:{{name}}</h2>
     <h2>Occupation:{{occupation}}</h2>
     <h2>Weapon:{{weapon}}</h2>
-    <a  href="/characters/{{id}}">kasdkajsdhkjsa</a>
+    <a  href="/characters/{{id}}">See details</a>
+    <form method="post" action="/search/{{id}}/delete">
+    
+    <button>Delete character</button>
+    </form>
+    <a href="/search/{{id}}/edit"> Edit here</a>
 {{/each}}

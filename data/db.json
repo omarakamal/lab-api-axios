@@ -1,27 +1,19 @@
 {
   "characters": [
     {
-      "id": 1,
-      "name": "Han Solo",
-      "occupation": "Smuggler",
-      "weapon": "Blaster Pistol",
-      "cartoon": true
-    },
-    {
-      "id": 2,
-      "name": "Luke Skywalker",
+      "name": "mario",
       "occupation": "Jedi Knight",
       "weapon": "Lightsaber",
-      "cartoon": false
+      "id": 2
     },
     {
-      "name": "Patrick Star",
+      "name": "loro",
       "occupation": "unemployed",
       "weapon": "rock",
       "id": 3
     },
     {
-      "name": "Bob Sponge",
+      "name": "Pantalones cuadrados",
       "occupation": "Fry Cook",
       "weapon": "Spatula",
       "id": 4
@@ -51,84 +43,6 @@
       "occupation": "Space creator",
       "weapon": "Poison",
       "id": "aWy5IMd"
-    },
-    {
-      "name": "Viper",
-      "occupation": "Space creator",
-      "weapon": "Poison",
-      "id": "L4gc_dY"
-    },
-    {
-      "name": "Viper",
-      "occupation": "Space creator",
-      "weapon": "Poison",
-      "id": "4jBaat-"
-    },
-    {
-      "name": "Viper",
-      "occupation": "Space creator",
-      "weapon": "Poison",
-      "id": "axFTPuW"
-    },
-    {
-      "name": "Viper",
-      "occupation": "Space creator",
-      "weapon": "Poison",
-      "id": "X7M9TYH"
-    },
-    {
-      "name": "Viper",
-      "occupation": "Space creator",
-      "weapon": "Poison",
-      "id": "EczWcO6"
-    },
-    {
-      "name": "Viper",
-      "occupation": "Space creator",
-      "weapon": "Poison",
-      "id": "3hfdpSO"
-    },
-    {
-      "name": "Viper",
-      "occupation": "Space creator",
-      "weapon": "Poison",
-      "id": "DJw1Wbz"
-    },
-    {
-      "name": "Viper",
-      "occupation": "Space creator",
-      "weapon": "Poison",
-      "id": "gEGTEr_"
-    },
-    {
-      "name": "Mars",
-      "occupation": "Tank",
-      "weapon": "Spear",
-      "id": "N6OtA2H"
-    },
-    {
-      "name": "Kunka",
-      "occupation": "Pirate",
-      "weapon": "Water",
-      "id": "HYtjDzj"
-    },
-    {
-      "name": "qweqwe",
-      "occupation": "qweewq",
-      "weapon": "qewqe",
-      "id": "AachjLv"
-    },
-    {
-      "name": "qweqwe2",
-      "occupation": "qweewq2",
-      "weapon": "qewqe2",
-      "id": "BfGLr8j"
-    },
-    {
-      "name": "asdsad",
-      "occupation": "dasd",
-      "weapon": "daad",
-      "id": "MWcy6EO"
     }
   ]
 }
