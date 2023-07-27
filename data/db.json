@@ -1,30 +1,48 @@
 {
   "characters": [
     {
-      "id": 1,
-      "name": "Han Solo",
-      "occupation": "Smuggler",
-      "weapon": "Blaster Pistol",
-      "cartoon": true
-    },
-    {
-      "id": 2,
-      "name": "Luke Skywalker",
+      "name": "mario",
       "occupation": "Jedi Knight",
       "weapon": "Lightsaber",
-      "cartoon": false
+      "id": 2
     },
     {
-      "name": "Patrick Star",
+      "name": "loro",
       "occupation": "unemployed",
       "weapon": "rock",
       "id": 3
     },
     {
-      "name": "Bob Sponge",
+      "name": "Pantalones cuadrados",
       "occupation": "Fry Cook",
       "weapon": "Spatula",
       "id": 4
+    },
+    {
+      "name": "Sven",
+      "occupation": "Pusher",
+      "id": "5"
+    },
+    {
+      "name": "Lina",
+      "occupation": "assasin",
+      "id": "7"
+    },
+    {
+      "name": "Bounty-Hunter",
+      "occupation": "Spy",
+      "id": "8"
+    },
+    {
+      "name": "Pudge",
+      "occupation": "Butcher",
+      "id": "9"
+    },
+    {
+      "name": "Viper",
+      "occupation": "Space creator",
+      "weapon": "Poison",
+      "id": "aWy5IMd"
     }
   ]
 }
