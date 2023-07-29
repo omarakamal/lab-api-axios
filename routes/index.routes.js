@@ -68,10 +68,29 @@ router.post("/search/new-character", (req, res, next) => {
     });
 });
 
-//ITERATION 7
-//POST route for editing 1 character
-router.post("/search/edit", (req, res, next) => {
-  //Write code here
+// //ITERATION 7
+// //POST route for editing 1 character
+// router.post("/search/edit", (req, res, next) => {
+//   //Write code here
+// });
+
+router.post('/search/edit', (req, res, next) => {
+  const { id, name, occupation, weapon, cartoon } = req.body;
+  const updatedCharacter = {
+    name,
+    occupation,
+    weapon,
+    cartoon: Boolean(cartoon), 
+  };
+
+  axios.put(`http://localhost:8000/characters/${id}`, updatedCharacter)
+    .then(response => {
+      res.redirect('/');
+    })
+    .catch(error => {
+      next(error);
+    });
 });
+
 
 module.exports = router;
